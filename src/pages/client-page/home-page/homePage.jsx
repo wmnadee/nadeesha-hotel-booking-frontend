@@ -1,4 +1,4 @@
-import Header from "../../components/header/header.jsx";
+import Header from "../../../components/header/header.jsx";
 export default function HomePage(){
     return(
         <>
@@ -24,7 +24,6 @@ export default function HomePage(){
                             <option> Normal </option>
                             <option> Low </option> 
                         </select>
-
                 </div>
 
                 

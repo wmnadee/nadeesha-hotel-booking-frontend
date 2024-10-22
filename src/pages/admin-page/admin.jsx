@@ -17,8 +17,11 @@ export default function AdminPage() {
       <div className="w-full  max-h-[100vh] bg-red-200 flex overflow-y-hidden">
         {/* Sidebar */} 
         <div className="w-[20%] h-screen bg-white flex-row">
-          <div>
+          <div className="flex justify-center items-center text-center">
+          <Link to="/" className="font-medium p-[10px] text-[#b89c3b]"> 
             <img src="../public/logo-2.jpg" className="w-[100%] h-[100%]" />
+            <button className="bg-[#b89c3b] text-black p-[10px] rounded-[30px] hover:bg-sky-500 hover:text-white">GO TO HOME</button>
+            </Link>
           </div>
 
           <h1 className="text-[25px] p-8 text-center">

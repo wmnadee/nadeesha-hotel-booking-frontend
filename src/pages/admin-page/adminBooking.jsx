@@ -1,5 +1,30 @@
 
-
+const bookings = [
+    {
+      "bookingId": "123456",
+      "email": "example1@email.com",
+      "startDate": "2024-10-01",
+      "endDate": "2024-10-05",
+      "status": "Confirmed",
+      "reason": "N/A"
+    },
+    {
+      "bookingId": "789101",
+      "email": "example2@email.com",
+      "startDate": "2024-11-15",
+      "endDate": "2024-11-20",
+      "status": "Pending",
+      "reason": "Awaiting payment"
+    },
+    {
+      "bookingId": "112131",
+      "email": "example3@email.com",
+      "startDate": "2024-12-05",
+      "endDate": "2024-12-10",
+      "status": "Canceled",
+      "reason": "Client requested cancellation"
+    }
+  ]
 
 
 export default function AdminBooking(){ 
@@ -45,6 +70,11 @@ export default function AdminBooking(){
                 <td className="px-4 py-2">Client requested cancellation</td>
             </tr>
 
+                {
+                    bookings.map(()=>{
+                        console.log(booking)
+                    })
+                }
             </tbody>
          </table>
          </div>

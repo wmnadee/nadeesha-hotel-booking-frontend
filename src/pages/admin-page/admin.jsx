@@ -1,7 +1,7 @@
 import { Link, Route, Routes } from "react-router-dom";
 import { LuBookOpenCheck } from "react-icons/lu";
 import { AiOutlineAppstore, AiOutlineUser, AiOutlinePicture, AiOutlineHome } from "react-icons/ai";
-import AdminBooking from "./adminBooking";
+import AdminBooking from "./booking";
 import Category from "./category";
 import Rooms from "./rooms";
 import Users from "./users";
@@ -30,7 +30,7 @@ export default function AdminPage() {
 
           {/* Menu Links */}
           <div className="p-8 bg-sky-500 text-[30px] text-white hover:font-bold  border-b-2 border-white">
-            <Link to="/admin/bookings" className="flex items-center space-x-2">
+            <Link to="/admin/booking" className="flex items-center space-x-2">
               <LuBookOpenCheck />
               <span>Bookings</span>
             </Link>
@@ -72,7 +72,7 @@ export default function AdminPage() {
         {/* Main Content */}
         <div className="w-[80%] max-h-[100vh] bg-blue-950 p-10 overflow-y-scroll">
           <Routes path="/*"> 
-            <Route path="/bookings" element={<AdminBooking />} />
+            <Route path="/booking" element={<AdminBooking/>} />
             <Route path="/categories" element={<Category />} /> 
             <Route path="/rooms" element={<Rooms />} /> 
             <Route path="/users" element={<Users />} /> 
